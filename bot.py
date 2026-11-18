@@ -388,7 +388,7 @@ async def handle(request):
     return web.Response(text="OK")
 
 app = web.Application
-app.add\_routes(\[web.get('/',handle)\])
+app.add\_routes(\[web.get('/',handle)])
 
 if __name__ == '__main__'
     port = int(os.environ.get("PORT", 10000)
