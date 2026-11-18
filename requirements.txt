@@ -1,1 +1,5 @@
-pyTelegramBotAPI, requests, python-dotenv, google-genai и apscheduler
+pyTelegramBotAPI
+requests
+python-dotenv
+google-genai
+apscheduler
