@@ -381,3 +381,16 @@ if GEMINI_KEY and questions:
 
 with open("state.json", "w", encoding="utf-8") as f:
     json.dump(state, f, ensure_ascii=False)
+import os
+from aiohttp import web
+
+async def handle(request):
+    return web.Response(text="OK")
+
+app = web.Application()
+app.add_routes([web.get('/', handle)
+
+if __name__ == '__main__':
+    port = int(os.environ.get("PORT", 10000)
+    web.run_app(app, host='0.0.0.0', port=port)
+
